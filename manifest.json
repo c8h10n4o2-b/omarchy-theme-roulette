@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "z.theme-roulette",
+  "name": "Theme Roulette",
+  "version": "1.0.0",
+  "author": "c8h10n4o2-b",
+  "license": "MIT",
+  "description": "Random Omarchy themes with dark/light pools, exclusions and one shared schedule.",
+  "kinds": [
+    "service",
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "service": "RouletteService.qml",
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "Theme Roulette",
+    "description": "Choose random themes and configure their schedule.",
+    "category": "System",
+    "allowMultiple": false,
+    "defaultSection": "right",
+    "defaults": {
+      "enabled": false,
+      "pool": "Any",
+      "intervalMinutes": 30,
+      "excludedThemes": []
+    },
+    "schema": [
+      {
+        "key": "enabled",
+        "type": "boolean",
+        "label": "Automatic switching",
+        "defaultValue": false
+      },
+      {
+        "key": "pool",
+        "type": "enum",
+        "label": "Theme pool",
+        "options": [
+          "Dark",
+          "Light",
+          "Any"
+        ],
+        "defaultValue": "Any"
+      },
+      {
+        "key": "intervalMinutes",
+        "type": "integer",
+        "label": "Interval (minutes)",
+        "min": 5,
+        "max": 240,
+        "defaultValue": 30
+      }
+    ]
+  }
+}
