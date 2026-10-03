@@ -16,6 +16,20 @@ Randomly switch between your installed Omarchy themes, with **Dark / Light / Any
 - Native `omarchy theme set` application, preserving normal retinting and hooks.
 - One shared schedule across monitors, persistent settings, and overlapping-worker protection.
 
+## Screenshots
+
+Theme pool choices:
+
+![Dark, Light and Any theme pool choices](screenshots/theme-pool.png)
+
+Bar tooltip showing the interval and current theme:
+
+![Theme Roulette bar tooltip](screenshots/bar-tooltip.png)
+
+Controls with a light theme:
+
+![Theme Roulette controls using the Lupine light theme](screenshots/light-theme.png)
+
 ## Requirements
 
 Omarchy **Quattro**, with its Quickshell plugin API and `omarchy plugin` commands. Tested on **Omarchy 4.0.4-1**; older versions and future incompatible API changes are not guaranteed.
